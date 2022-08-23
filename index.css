@@ -1,0 +1,186 @@
+body {
+    background: linear-gradient(#2B0A9C, #6501B3, #F33192, #FFE86A, #F677A9, #161DB6);
+}
+
+header{
+    font-size: 175%;
+    justify-content: center;
+    text-shadow: 2vh 0vh 4vw yellow;
+    text-align: center;
+    margin: 6vh 2vw;
+    border: none;
+    padding: none;
+}
+
+#globeBox{
+    display: flex;
+    flex-direction: column;
+    columns: 25vw 3;
+    flex-wrap: wrap
+    /* grid-template-columns: 25vw 25vw 25vw; */
+    /* grid-template-rows: 25vh 25vh 25vh; */
+    /* margin-top: -2%; */
+}
+
+globeBox{
+    margin: 0vh;
+    flex: 35%;
+    width: 35%;
+    justify-content: space-evenly;
+}
+
+#globe{
+    /* vertical-align: middle; */
+    opacity: 0.7;
+    width: 100%;
+    margin-left: 30vw;
+    /* margin: 5vw; */
+    padding: none;
+    border: none;
+}
+
+#globe:hover {
+    animation-name: globeSpin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1ms;
+}
+
+@keyframes globeSpin {
+    from {transform: rotatez(0deg)}
+    to {transform: rotateZ(360deg)}
+} 
+
+button{
+    /* border-radius: 50%; */
+    width: 10vw;
+    height: 10vh;
+    font-size: 1em;
+}
+
+.play {
+    justify-content: center;
+    margin: 1vh 5vw 0vh 75vw;
+}
+
+/* ** actually want the animation to play here - why does this not work?
+.play:hover{
+    animation-name: globeSpin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1ms;
+} */
+
+/*  ** Round 1, onward */
+
+.round{ 
+    font-size: 6vh;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.whosTurn{
+    text-align: center;
+    justify-content: middle;
+    align-items: center;
+    text-align: center;
+    line-height: 6vh;
+    height: 6vh;
+    width: 33vw;
+    margin: 2vh 25vw 5vh 60vh;
+    border: solid 1px black;
+}
+
+.roundOneTable{
+    width: 90%;
+    display: grid;
+    column-count: 6;
+    gap: 2px;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+    /* grid-row: 1/6; */
+}
+
+.category{
+    /* grid-column: 1/ 6;
+    grid-row: 1; */
+    font-size: 1em;
+    padding: 5px;
+    border: solid 1px black;
+    font-weight: bold;
+}
+
+.score{
+    gap: 2px;
+    /* grid-column: 1/ 6;
+    grid-row: 2 /6; */
+}
+
+.one {
+    /* grid-row: 2; */
+    font-size: 1em;
+    padding: 5px;
+    border: solid 1px black;
+    font-weight: bold;
+}
+
+.two {
+    /* grid-row: 3; */
+    font-size: 1em;
+    padding: 5px;
+    border: solid 1px black;
+    font-weight: bold;
+}
+
+.three {
+    font-size: 1em;
+    padding: 5px;
+    border: solid 1px black;
+    font-weight: bold;
+}
+
+.four {
+    font-size: 1em;
+    padding: 5px;
+    border: solid 1px black;
+    font-weight: bold;
+}
+
+.five {
+    font-size: 1em;
+    padding: 5px;
+    border: solid 1px black;
+    font-weight: bold;
+}
+
+form{
+    justify-content: center;
+}
+
+.answerBlock{
+    display: grid;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+    height: 2vh;
+    width: 5vw;
+    /* margin: 3vh 5vw 3vh 20vw; */
+}
+
+.guessOrPass { 
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3vw;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+}
+
+.nextRound{
+}
+
+
