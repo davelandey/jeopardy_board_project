@@ -90,24 +90,6 @@ let buttonGroup = document.getElementsByTagName("button");
 
 
 // ** ROUND ONE ** //
-        // Notification: player one's turn
-// Guess/Pass and Next round buttons are disabled
-// Guess/Pass buttons enabled
-// Pass = player 2 turn
-// Submit = 
-// correct? Points added, card blanked out, same player
-// incorrect? Points subtracted, other player can answer
-// second player incorrect - player one chooses a new question
-// scoreboard: display each players score
-// Question: answer is required - can submit or pass
-// Round One - end: 
-// score of one player = max 
-// OR board cleared
-// Next round button enabled
-// HINT: use query params to pass score info
-// Button dis/en-abled:
-
-
 start();
 
 function start(){
@@ -120,9 +102,6 @@ function start(){
         (roundOneCategorySix.textContent = generalQuestions[0].category)}, 
         1000);
     }
-    
-//  Player one: select card from board
-    // score replaced with question
     
     // Event listeners:
     // Nature:
@@ -164,7 +143,6 @@ gen5.addEventListener("click", gen5Click);
 
 //Guess or Pass buttons
 answerBlock.addEventListener("keyup", buttonEnable);
-
 
     // Click functions:
 // Nature:
