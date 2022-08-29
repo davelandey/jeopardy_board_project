@@ -1,0 +1,237 @@
+/* SITE WIDE STYLING */
+
+html {
+    background: linear-gradient(#2B0A9C, #6501B3, #F33192, #FFE86A, #F677A9, #161DB6);
+    min-height: 100%;
+}
+
+header{
+    border: none;
+    padding: none;
+    margin: none;
+}
+
+h1{
+    font-size: 4em;
+    /* justify-content: center; */
+    text-shadow: 2vh 0vh 4vw yellow;
+    text-align: center;
+    border: none;
+    padding: none;
+    margin: none;
+}
+
+h2{
+    margin:none;
+    padding:none;   
+}
+
+#welcomePage{
+    gap: 0.5em;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+} 
+
+.welcome{
+    padding: none;
+    margin: none;
+    border: none;
+}
+
+#globe{
+    vertical-align: middle; 
+    opacity: 0.7;
+    width: 35%;
+    margin-left: 30%;
+    padding: none;
+    border: none;
+} 
+
+ #globe:hover {
+    animation-name: globeSpin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1ms;
+} 
+
+ @keyframes globeSpin {
+    from {transform: rotatez(0deg)}
+    to {transform: rotateZ(360deg)}
+}
+
+.play {
+    margin: none;
+    margin-left: 80%;
+    padding: none;
+    border: none;
+    width: 10%;
+}
+
+#pageOneFooter{
+    margin: none;
+    margin-top: 2%;
+    padding: none;
+    border: none;
+}
+
+button{
+    margin: none;
+    padding: none;
+    border: none;
+    border-style: double;
+    width: 12vw;
+    height: 8vh;
+    font-size: 1em;
+    background-color: rgb(19, 95, 215, 0.7);
+}
+
+button:hover{
+    background: rgb(19, 95, 215, 0.8);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.answerBlock{
+    grid-column: 2/ span 3;
+    grid-row: 1;
+}
+
+.playerAns{
+/* align-items: center;
+justify-content: center; */
+text-align: center;
+}
+
+::placeholder{
+    text-align: center;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.guessOrPass{
+    grid-column: 2/ span 3;
+    grid-row: 2;
+    align-content: center;
+    justify-content: center;
+}
+
+.guess{
+    margin-right: 10px;
+}
+
+.pass{
+    margin-left: 10px;
+}
+
+/* .scores{
+    grid-column: 2 / span 3;
+    grid-row: 3;
+} */
+/* !I want the scores to be separated */
+
+.nextRound{
+    grid-column: 5;
+    grid-row: 3;
+}
+
+.footer{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    margin: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(19, 95, 215, 0.6);
+}
+
+/* ROUND PAGES */
+
+.round{
+    font-size: 2em;
+}
+
+.whosTurn{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.topTable{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 85%;
+  margin-left: 7.5%;
+  background-color: rgb(19, 95, 215, 0.8);
+  column-gap: 10px;
+  row-gap: 2px;
+}
+
+.topTable > * {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+    align-self: center;
+}
+
+
+.category{
+    border: 8px double black;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.question{
+    font-size: 1em;
+    font-weight: 500;
+    color: #F2ED1B;
+    text-shadow: 1px 1px black;
+}
+/* .question:hover{
+font-size: 1.2em;
+font-weight: 700;
+text-shadow: 1px 2px 3px #23AD23;
+
+} */
+
+.bottomTable{
+    margin: 2vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 12vh);
+}
+.bottomTable > *{
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 2px;
+    padding: none;
+}
+
+.playerOneScore{
+    grid-column: 2;
+    grid-row: 3; 
+}
+
+.playerTwoScore{
+    grid-column: 3;
+    grid-row: 4; 
+}
+
+/* SPECIFIC TO ROUND ONE */
+
+/* 
+.one {
+}
+
+.two{
+}
+
+.three{
+}
+
+.four{
+}
+
+.five{
+} */

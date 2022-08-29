@@ -4,73 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./index2.css">
   <title>Jeopardy: Round 1</title>
 </head>
-<body>
-  <header><h1 class="round">Round One</h1></header>
-  <div>
+<body class="roundPage">
+  <header>
+    <h1 class="round">Round One</h1>
+  </header>
     <h2 class="whosTurn">*PLAYER NAME*</h2><br>
-    <div class="displayBox"></div>
-  </div><br>
-  <div class="roundOneTable">
-    <div class="category">Category 1</div>
-    <div class="category">Category 2</div>
-    <div class="category">Category 3</div>
-    <div class="category">Category 4</div>
-    <div class="category">Category 5</div>
-    <div class="category">Category 6</div>
+  <div class="topTable">
+    <div class="round1 category one nature" id="category1">Category 1</div>
+    <div class="round1 category two animals" id="category2">Category 2</div>
+    <div class="round1 category three computers" id="category3">Category 3</div>
+    <div class="round1 category four mythology" id="category4">Category 4</div>
+    <div class="round1 category five history" id="category5">Category 5</div>
+    <div class="round1 category six general" id="category6">Category 6</div>
+    <div class="round1 question one" id="nature1">$200</div>
+    <div class="round1 question one" id="animals1">$200</div>
+    <div class="round1 question one" id="computers1">$200</div>
+    <div class="round1 question one" id="mythology1">$200</div>
+    <div class="round1 question one" id="history1">$200</div>
+    <div class="round1 question one" id="general1">$200</div>
+    <div class="round1 question two" id="nature2">$400</div>
+    <div class="round1 question two" id="animals2">$400</div>
+    <div class="round1 question two" id="computers2">$400</div>
+    <div class="round1 question two" id="mythology2">$400</div>
+    <div class="round1 question two" id="history2">$400</div>
+    <div class="round1 question two" id="general2">$400</div>
+    <div class="round1 question three" id="nature3">$600</div>
+    <div class="round1 question three" id="animals3">$600</div>
+    <div class="round1 question three" id="computers3">$600</div>
+    <div class="round1 question three" id="mythology3">$600</div>
+    <div class="round1 question three" id="history3">$600</div>
+    <div class="round1 question three" id="general3">$600</div>
+    <div class="round1 question four" id="nature4">$800</div>
+    <div class="round1 question four" id="animals4">$800</div>
+    <div class="round1 question four" id="computers4">$800</div>
+    <div class="round1 question four" id="mythology4">$800</div>
+    <div class="round1 question four" id="history4">$800</div>
+    <div class="round1 question four" id="general4">$800</div>
+    <div class="round1 question five" id="nature5">$1000</div>
+    <div class="round1 question five" id="animals5">$1000</div>
+    <div class="round1 question five" id="computers5">$1000</div>
+    <div class="round1 question five" id="mythology5">$1000</div>
+    <div class="round1 question five" id="history5">$1000</div>
+    <div class="round1 question five" id="general5">$1000</div>
   </div>
-  <div class="score">
-    <div class="one">100</div>
-    <div class="one">100</div>
-    <div class="one">100</div>
-    <div class="one">100</div>
-    <div class="one">100</div>
-    <div class="one">100</div>
-    <div class="two">200</div>
-    <div class="two">200</div>
-    <div class="two">200</div>
-    <div class="two">200</div>
-    <div class="two">200</div>
-    <div class="two">200</div>
-    <div class="three">300</div>
-    <div class="three">300</div>
-    <div class="three">300</div>
-    <div class="three">300</div>
-    <div class="three">300</div>
-    <div class="three">300</div>
-    <div class="four">400</div>
-    <div class="four">400</div>
-    <div class="four">400</div>
-    <div class="four">400</div>
-    <div class="four">400</div>
-    <div class="four">400</div>
-    <div class="five">500</div>
-    <div class="five">500</div>
-    <div class="five">500</div>
-    <div class="five">500</div>
-    <div class="five">500</div>
-    <div class="five">500</div>
-    </div><br>
-</div>
-    <div class="answerBlock">
+  <div class="bottomTable">
+    <div class="answerBlock" id="roundOneAnswer">
       <form action="#">
-      <label for="playerAns"><i>I think the answer is:</i></label><br>
-      <input type="text" name="playerAns" id="playerAns">
+      <label for="playerAns"><i></i></label><br>
+      <input type="text" name="playerAns" id="playerAns" placeholder="Your answer, here.">
       </form><br>
     </div>
     <div class="guessOrPass">
-      <button class="guess">Guess</button>
-      <button class="pass">Pass</button>
+      <button id="guess">Guess</button>
+      <button id="pass">Pass</button>
     </div>
-    <div class="scores">
-      <h3 class="playerScore" id="playeOneScore">Player 1: score</h3>
-      <h3 class="playerScore" id="playerTwoScore">Player 2: score</h3>
-    </div>
+      <h3 class="playerScore">Player 1: <span id="playeOneScore">SCORE</span></h3>
+      <h3 class="playerScore">Player 2: <span id="playeTwoScore">SCORE</span></h3>
     <div class="nextRound">
-      <a href="./roundTwo.html"><button class="nextRoundOne">Next Round!</button></a>
-    </div>
+      <a href="./roundTwo.html"><button id="nextRoundOne">Next Round!</button></a>
+  </div>
+  </div><br>
+  <footer>
+    <h2 class="footer">SITE INFORMATION</h2>
+  </footer>
   </div> 
+  <script type="module" src="./scripts/index.js"></script>
 </body>
 </html>

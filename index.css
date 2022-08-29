@@ -1,66 +1,103 @@
-body {
+/* Sitewide styling */
+
+html {
     background: linear-gradient(#2B0A9C, #6501B3, #F33192, #FFE86A, #F677A9, #161DB6);
+    min-height: 100%;
 }
 
 header{
-    font-size: 175%;
-    justify-content: center;
-    text-shadow: 2vh 0vh 4vw yellow;
-    text-align: center;
-    margin: 6vh 2vw;
     border: none;
     padding: none;
+    margin: none;
 }
 
-#globeBox{
+h1{
+    font-size: 4em;
+    /* justify-content: center; */
+    text-shadow: 2vh 0vh 4vw yellow;
+    text-align: center;
+    border: none;
+    padding: none;
+    margin: none;
+}
+h2{
+    margin:none;
+    padding:none;
+}
+
+.roundPage{
+
+}
+
+button{
+    margin: none;
+    padding: none;
+    border: none;
+    width: 12vw;
+    height: 8vh;
+    font-size: 1em;
+}
+.footer{
+    justify-content: space-around;
+    flex: 1;
+    width: 800px;
+    text-align: center;
+    margin: none;
+    padding: none;
+    border: 2px solid black;
+    border-width: 80%;
+}
+
+/* Welcome page styling */
+#welcomePage{
     display: flex;
-    flex-direction: column;
-    columns: 25vw 3;
-    flex-wrap: wrap
-    /* grid-template-columns: 25vw 25vw 25vw; */
-    /* grid-template-rows: 25vh 25vh 25vh; */
-    /* margin-top: -2%; */
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: -2%;
+    justify-content: center;
+} 
 
-globeBox{
-    margin: 0vh;
-    flex: 35%;
-    width: 35%;
-    justify-content: space-evenly;
+.welcome{
+    width: 100%;
+    padding: none;
+    margin: none;
+    border: none;
 }
 
 #globe{
-    /* vertical-align: middle; */
+    vertical-align: middle; 
     opacity: 0.7;
-    width: 100%;
-    margin-left: 30vw;
-    /* margin: 5vw; */
+    width: 35vw;
+    flex: 1;
+    margin: none;
     padding: none;
     border: none;
-}
-
-#globe:hover {
-    animation-name: globeSpin;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-delay: 1ms;
-}
-
-@keyframes globeSpin {
-    from {transform: rotatez(0deg)}
-    to {transform: rotateZ(360deg)}
+    flex-grow: 1;
 } 
 
-button{
-    /* border-radius: 50%; */
-    width: 10vw;
-    height: 10vh;
-    font-size: 1em;
-}
+ #globe:hover {
+    animation-name: globeSpin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1ms;
+} 
+
+ @keyframes globeSpin {
+    from {transform: rotatez(0deg)}
+    to {transform: rotateZ(360deg)}
+}  
 
 .play {
+    flex-grow: 1;
+    /* vertical-align: middle;  */
+    width: 80%;
     justify-content: center;
-    margin: 1vh 5vw 0vh 75vw;
+    align-self: center;
+    /* flex: 1; */
+    margin: none;
+    padding: none;
+    border: none;
 }
 
 /* ** actually want the animation to play here - why does this not work?
@@ -69,18 +106,19 @@ button{
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: 1ms;
-} */
+}  */
 
-/*  ** Round 1, onward */
+/* Round one styling */
 
-.round{ 
-    font-size: 6vh;
+/* .round{ 
+    font-size: 1.5em;
     justify-content: center;
     justify-items: center;
     text-align: center;
-}
+} */
 
 .whosTurn{
+    font-size: 1.5em;
     text-align: center;
     justify-content: middle;
     align-items: center;
@@ -89,37 +127,45 @@ button{
     height: 6vh;
     width: 33vw;
     margin: 2vh 25vw 5vh 60vh;
-    border: solid 1px black;
+    border: 4px double black;
 }
 
-.roundOneTable{
-    width: 90%;
-    display: grid;
-    column-count: 6;
+.table{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 80%;
+    gap: 0.2rem;
+    margin: none;
+    padding: none;
+    list-style: none;
+    border: solid 2px black;
+    flex: 1;
     gap: 2px;
-    justify-content: center; 
-    align-items: center;
-    align-content: center;
-    /* grid-row: 1/6; */
+}
+
+/* .class > * { */
+    /* Access to children within class */
+    /* flex - shorthand for flex-shrink, grow and basis */
+    /* flex-shrink, grow and basis can be repalced by flex: */
 }
 
 .category{
-    /* grid-column: 1/ 6;
-    grid-row: 1; */
-    font-size: 1em;
     padding: 5px;
     border: solid 1px black;
     font-weight: bold;
 }
 
+.category > *{
+    min-width: 1
+    font-size: 1.5em;
+    border: solid 1px black;
+}
+
 .score{
-    gap: 2px;
-    /* grid-column: 1/ 6;
-    grid-row: 2 /6; */
 }
 
 .one {
-    /* grid-row: 2; */
     font-size: 1em;
     padding: 5px;
     border: solid 1px black;
@@ -153,10 +199,6 @@ button{
     padding: 5px;
     border: solid 1px black;
     font-weight: bold;
-}
-
-form{
-    justify-content: center;
 }
 
 .answerBlock{
