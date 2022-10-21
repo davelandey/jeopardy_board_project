@@ -26,6 +26,8 @@ h2{
     padding:none;   
 }
 
+/* Styling for landing page */
+
 #welcomePage{
     gap: 0.5em;
     justify-content: center;
@@ -59,6 +61,8 @@ h2{
     from {transform: rotatez(0deg)}
     to {transform: rotateZ(360deg)}
 }
+
+/* Styling for round pages */
 
 .play {
     margin: none;
@@ -123,11 +127,6 @@ text-align: center;
     margin-left: 10px;
 }
 
-/* .scores{
-    grid-column: 2 / span 3;
-    grid-row: 3;
-} */
-/* !I want the scores to be separated */
 
 .nextRound{
     grid-column: 5;
@@ -143,8 +142,6 @@ text-align: center;
     border: 2px solid black;
     background-color: rgb(19, 95, 215, 0.6);
 }
-
-/* ROUND PAGES */
 
 .round{
     font-size: 2em;
@@ -186,12 +183,7 @@ text-align: center;
     color: #F2ED1B;
     text-shadow: 1px 1px black;
 }
-/* .question:hover{
-font-size: 1.2em;
-font-weight: 700;
-text-shadow: 1px 2px 3px #23AD23;
 
-} */
 
 .bottomTable{
     margin: 2vh;
@@ -218,20 +210,15 @@ text-shadow: 1px 2px 3px #23AD23;
     grid-row: 4; 
 }
 
-/* SPECIFIC TO ROUND ONE */
-
-/* 
-.one {
+/* FINAL ROUND */
+.topTableFinal{
+    align-items: center;
+    background-color: rgb(19, 95, 215, 0.8);
+    border: 2px solid black;
+    width: 75%;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
 }
-
-.two{
-}
-
-.three{
-}
-
-.four{
-}
-
-.five{
-} */

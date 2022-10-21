@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@davelandey 
+burlingtoncodeacademy-students
+/
+jeopardy-board-davelandey
+Private
+generated from BurlingtonCodeAcademy/jeopardy
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+jeopardy-board-davelandey/index.css
+@davelandey
+davelandey Monday morning submission
+Latest commit e7dc74d on Aug 29
+ History
+ 1 contributor
+228 lines (197 sloc)  3.7 KB
+
 /* Sitewide styling */
 
 html {
@@ -224,5 +254,3 @@ button{
 
 .nextRound{
 }
-
-
