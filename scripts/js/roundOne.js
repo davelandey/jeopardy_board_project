@@ -247,6 +247,7 @@ function gen4Click(event) {
 }
 function gen5Click(event) {
   gen5.innerText = generalQuestions[4].question;
+  buttonEnable()
 }
 
 // Button disabled/enabled:
